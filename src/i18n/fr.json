@@ -1,0 +1,64 @@
+{
+  "apps": {
+    "about": { "title": "À propos" },
+    "projects": { "title": "Projets" },
+    "skills": { "title": "Compétences" },
+    "contact": { "title": "Contact" },
+    "terminal": { "title": "Terminal" },
+    "settings": { "title": "Paramètres" }
+  },
+  "boot": {
+    "loading": "Chargement de TahaOS...",
+    "skip": "Appuyez sur Entrée ou cliquez pour passer"
+  },
+  "desktop": {
+    "contextMenu": {
+      "changeWallpaper": "Changer le fond d'écran",
+      "toggleTheme": "Changer le thème",
+      "openTerminal": "Ouvrir le Terminal",
+      "about": "À propos de TahaOS"
+    }
+  },
+  "about": {
+    "greeting": "Salut, je suis Taha",
+    "role": "Étudiant Ingénieur Logiciel | Big Data & Machine Learning",
+    "bio": "Passionné par le développement logiciel et la création de solutions data-driven. Toujours en train d'apprendre, toujours en train de construire.",
+    "education": "Formation",
+    "interests": "Centres d'intérêt"
+  },
+  "projects": {
+    "viewCode": "Voir le code",
+    "liveDemo": "Démo en ligne",
+    "techStack": "Technologies"
+  },
+  "skills": {
+    "languages": "Langages",
+    "web": "Web & Backend",
+    "databases": "Bases de données & NoSQL",
+    "bigdata": "Big Data & Streaming",
+    "ml": "Machine Learning / Deep Learning",
+    "devops": "DevOps & Modélisation"
+  },
+  "contact": {
+    "title": "Me contacter",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer",
+    "or": "Ou contactez-moi à"
+  },
+  "settings": {
+    "appearance": "Apparence",
+    "theme": "Thème",
+    "dark": "Sombre",
+    "light": "Clair",
+    "language": "Langue",
+    "wallpaper": "Fond d'écran",
+    "sound": "Effets sonores"
+  },
+  "terminal": {
+    "welcome": "Bienvenue dans le Terminal TahaOS. Tapez 'help' pour les commandes disponibles.",
+    "notFound": "Commande non trouvée. Tapez 'help' pour les commandes disponibles.",
+    "prompt": "visiteur@tahaos"
+  }
+}

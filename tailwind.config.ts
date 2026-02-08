@@ -6,11 +6,43 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        os: {
+          bg: "var(--os-bg)",
+          surface: "var(--os-surface)",
+          text: "var(--os-text)",
+          "text-secondary": "var(--os-text-secondary)",
+          border: "var(--os-border)",
+          accent: "var(--os-accent)",
+          dock: "var(--os-dock)",
+          titlebar: "var(--os-titlebar)",
+        },
+      },
+      fontFamily: {
+        sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
+        mono: ["var(--font-geist-mono)", "Menlo", "monospace"],
+      },
+      animation: {
+        "cursor-blink": "blink 1s step-end infinite",
+        "fade-in": "fadeIn 0.5s ease-out",
+        "slide-up": "slideUp 0.3s ease-out",
+      },
+      keyframes: {
+        blink: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        slideUp: {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
     },
   },

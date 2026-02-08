@@ -2,26 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ========================================
+   OS Theme Variables — Dark Mode (default)
+   ======================================== */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --os-bg: #1a1a2e;
+  --os-surface: rgba(30, 30, 50, 0.85);
+  --os-text: #e0e0e0;
+  --os-text-secondary: #8888aa;
+  --os-border: rgba(255, 255, 255, 0.1);
+  --os-accent: #6c63ff;
+  --os-dock: rgba(20, 20, 40, 0.8);
+  --os-titlebar: rgba(30, 30, 50, 0.95);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ========================================
+   OS Theme Variables — Light Mode
+   ======================================== */
+.light {
+  --os-bg: #f0f0f5;
+  --os-surface: rgba(255, 255, 255, 0.85);
+  --os-text: #1a1a2e;
+  --os-text-secondary: #666680;
+  --os-border: rgba(0, 0, 0, 0.1);
+  --os-accent: #6c63ff;
+  --os-dock: rgba(255, 255, 255, 0.8);
+  --os-titlebar: rgba(245, 245, 250, 0.95);
 }
 
+/* ========================================
+   Base Styles
+   ======================================== */
+html,
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  color: var(--os-text);
+  background: var(--os-bg);
+  user-select: none;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* ========================================
+   Window Glass Effect (backdrop blur)
+   ======================================== */
+.glass {
+  background: var(--os-surface);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--os-border);
+}
+
+/* ========================================
+   Scrollbar Styling
+   ======================================== */
+.os-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.os-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.os-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--os-border);
+  border-radius: 3px;
+}
+
+.os-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--os-text-secondary);
+}
+
+/* ========================================
+   Selection Styling
+   ======================================== */
+::selection {
+  background: var(--os-accent);
+  color: white;
+}
+
+/* ========================================
+   Terminal Cursor
+   ======================================== */
+.terminal-cursor::after {
+  content: "▋";
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
