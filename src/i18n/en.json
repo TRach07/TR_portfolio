@@ -40,7 +40,8 @@
     "databases": "Databases & NoSQL",
     "bigdata": "Big Data & Streaming",
     "ml": "Machine Learning / Deep Learning",
-    "devops": "DevOps & Modeling"
+    "devops": "DevOps & Modeling",
+    "ide": "IDEs & Editors"
   },
   "contact": {
     "title": "Get in Touch",
