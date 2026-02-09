@@ -1,5 +1,5 @@
 /**
- * Professional experience data — work history and internships.
+ * Experience data — professional work history, internships, and other jobs.
  * Each entry supports bilingual titles/descriptions and an optional company logo.
  */
 
@@ -15,6 +15,7 @@ export interface Experience {
   logo?: string;
 }
 
+/** Professional experiences (engineering, internships) */
 export const EXPERIENCES: Experience[] = [
   {
     id: "exp-1",
@@ -53,5 +54,66 @@ export const EXPERIENCES: Experience[] = [
       fr: "Services systèmes et réseaux :\n- Configuration des switchs réseau\n- Maintenance du matériel informatique\n- Configuration et installation des systèmes d'exploitation",
     },
     logo: "/icons/badges/mairie-calais.png",
+  },
+];
+
+/** Other experiences (student jobs, seasonal work) */
+export const OTHER_EXPERIENCES: Experience[] = [
+  {
+    id: "other-1",
+    role: {
+      en: "Delivery Driver & Team Member",
+      fr: "Équipier Livreur Polyvalent",
+    },
+    company: "Domino's Pizza",
+    type: {
+      en: "Student Job",
+      fr: "Job étudiant",
+    },
+    period: "04/2023 – 08/2024",
+    location: "Calais (62), France",
+    description: {
+      en: "Production, order preparation, customer service, and home delivery.",
+      fr: "Production, préparation des commandes, service client et livraison à domicile.",
+    },
+    logo: "/icons/badges/domino's.png",
+  },
+  {
+    id: "other-2",
+    role: {
+      en: "Public Works Technician",
+      fr: "Adjoint Technique Territorial",
+    },
+    company: "Mairie de Calais",
+    type: {
+      en: "Seasonal Contract",
+      fr: "Contrat saisonnier",
+    },
+    period: "07/2023 – 08/2023",
+    location: "Calais (62), France",
+    description: {
+      en: "Contribution to coastal preservation and improvement of public facilities.",
+      fr: "Contribution à la préservation côtière et amélioration des installations publiques.",
+    },
+    logo: "/icons/badges/mairie-calais.png",
+  },
+  {
+    id: "other-3",
+    role: {
+      en: "Youth & Inclusion Coordinator",
+      fr: "Animateur",
+    },
+    company: "Cap Évasion",
+    type: {
+      en: "Seasonal Contract",
+      fr: "Contrat saisonnier",
+    },
+    period: "07/2022 – 08/2022",
+    location: "Jonzac (17), France",
+    description: {
+      en: "Leading and supervising inclusive activities for people with mental disabilities.",
+      fr: "Animation et encadrement d'activités inclusives pour personnes en difficulté (handicap mental).",
+    },
+    logo: "/icons/badges/cap_evasion.png",
   },
 ];
