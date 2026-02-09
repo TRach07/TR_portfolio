@@ -3,6 +3,7 @@
     "about": { "title": "À propos" },
     "projects": { "title": "Projets" },
     "skills": { "title": "Compétences" },
+    "certificates": { "title": "Certificats" },
     "contact": { "title": "Contact" },
     "terminal": { "title": "Terminal" },
     "settings": { "title": "Paramètres" }

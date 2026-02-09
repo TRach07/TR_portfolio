@@ -11,6 +11,7 @@ import { Window } from "./Window";
 import { AboutApp } from "@/components/apps/AboutApp";
 import { ProjectsApp } from "@/components/apps/ProjectsApp";
 import { SkillsApp } from "@/components/apps/SkillsApp";
+import { CertificatesApp } from "@/components/apps/CertificatesApp";
 import { ContactApp } from "@/components/apps/ContactApp";
 import { TerminalApp } from "@/components/apps/TerminalApp";
 import { SettingsApp } from "@/components/apps/SettingsApp";
@@ -25,6 +26,8 @@ function getAppContent(appId: AppId): React.ReactNode {
       return <ProjectsApp />;
     case "skills":
       return <SkillsApp />;
+    case "certificates":
+      return <CertificatesApp />;
     case "contact":
       return <ContactApp />;
     case "terminal":
