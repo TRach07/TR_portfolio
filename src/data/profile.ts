@@ -18,4 +18,21 @@ export const PROFILE = {
     fr: "Île-de-France",
   },
   avatar: "/images/Photo.png",
+  languages: [
+    {
+      name: { en: "French", fr: "Français" },
+      level: { en: "Fluent / Bilingual", fr: "Courant / Bilingue" },
+      flag: "🇫🇷",
+    },
+    {
+      name: { en: "English", fr: "Anglais" },
+      level: { en: "Professional Working", fr: "Capacité professionnelle" },
+      flag: "🇬🇧",
+    },
+    {
+      name: { en: "Arabic", fr: "Arabe" },
+      level: { en: "Native / Bilingual", fr: "Bilingue ou langue natale" },
+      flag: "🇲🇦",
+    },
+  ],
 } as const;

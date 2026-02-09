@@ -24,10 +24,10 @@
   },
   "about": {
     "greeting": "Salut, je suis Taha",
-    "role": "Étudiant Ingénieur Logiciel | Big Data & Machine Learning",
     "bio": "Passionné par le développement logiciel et la création de solutions data-driven. Toujours en train d'apprendre, toujours en train de construire.",
-    "education": "Formation",
-    "interests": "Centres d'intérêt"
+    "location": "Localisation",
+    "languages": "Langues",
+    "quickInfo": "En bref"
   },
   "projects": {
     "viewCode": "Voir le code",

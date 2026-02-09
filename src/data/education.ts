@@ -24,7 +24,7 @@ export const EDUCATION: Education[] = [
       en: "Engineering Degree — Big Data & Machine Learning (Bac+4/5)",
       fr: "Diplôme d'ingénieur — Big Data & Machine Learning (Bac+4/5)",
     },
-    period: "08/2024 – 07/2026",
+    period: "08/2024 – 10/2026",
     location: "Villejuif (94), France",
     logo: "/icons/badges/efrei.png",
   },
