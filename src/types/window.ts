@@ -32,6 +32,7 @@ export type AppId =
   | "projects"
   | "skills"
   | "certificates"
+  | "education"
   | "contact"
   | "terminal"
   | "settings";

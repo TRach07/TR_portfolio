@@ -4,6 +4,7 @@
     "projects": { "title": "Projects" },
     "skills": { "title": "Skills" },
     "certificates": { "title": "Certificates" },
+    "education": { "title": "Education" },
     "contact": { "title": "Contact" },
     "terminal": { "title": "Terminal" },
     "settings": { "title": "Settings" }
