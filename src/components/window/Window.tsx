@@ -146,7 +146,7 @@ export function Window({ windowState, children }: WindowProps) {
 
   /* ─── Maximized state styles ─── */
   const positionStyle = windowState.isMaximized
-    ? { top: 0, left: 0, width: "100vw", height: "calc(100vh - 48px)" }
+    ? { top: 28, left: 0, width: "100vw", height: "calc(100vh - 76px)" }
     : {
         top: windowState.position.y,
         left: windowState.position.x,
