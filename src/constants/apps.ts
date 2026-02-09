@@ -52,6 +52,15 @@ export const APP_REGISTRY: AppConfig[] = [
     showInDock: true,
   },
   {
+    id: "experience",
+    titleKey: "apps.experience.title",
+    icon: "/icons/experience.svg",
+    defaultSize: { width: 750, height: 550 },
+    minSize: { width: 450, height: 400 },
+    showOnDesktop: true,
+    showInDock: true,
+  },
+  {
     id: "contact",
     titleKey: "apps.contact.title",
     icon: "/icons/contact.svg",

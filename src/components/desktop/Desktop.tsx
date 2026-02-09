@@ -104,8 +104,8 @@ export function Desktop() {
       {/* Top menu bar */}
       <Taskbar />
 
-      {/* Desktop icons grid */}
-      <div className="absolute top-10 left-4 flex flex-col gap-1 pt-2">
+      {/* Desktop icons grid — flows top-to-bottom, then wraps to next column */}
+      <div className="absolute top-12 left-4 bottom-20 flex flex-col flex-wrap gap-1 content-start pt-2">
         {desktopApps.map((app) => (
           <DesktopIcon key={app.id} app={app} />
         ))}

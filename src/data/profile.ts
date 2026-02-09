@@ -10,7 +10,7 @@ export const PROFILE = {
     en: "Software Engineer Student | Big Data & Machine Learning",
     fr: "Étudiant Ingénieur Logiciel | Big Data & Machine Learning",
   },
-  email: "taha124rachid@gmail.com",
+  email: "taha125rachid@gmail.com",
   github: "https://github.com/TRach07",
   linkedin: "https://www.linkedin.com/in/taha-rachid-/",
   location: {

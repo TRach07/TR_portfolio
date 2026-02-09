@@ -5,6 +5,7 @@
     "skills": { "title": "Compétences" },
     "certificates": { "title": "Certificats" },
     "education": { "title": "Formation" },
+    "experience": { "title": "Expériences" },
     "contact": { "title": "Contact" },
     "terminal": { "title": "Terminal" },
     "settings": { "title": "Paramètres" }

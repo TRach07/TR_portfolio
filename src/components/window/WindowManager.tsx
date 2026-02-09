@@ -13,6 +13,7 @@ import { ProjectsApp } from "@/components/apps/ProjectsApp";
 import { SkillsApp } from "@/components/apps/SkillsApp";
 import { CertificatesApp } from "@/components/apps/CertificatesApp";
 import { EducationApp } from "@/components/apps/EducationApp";
+import { ExperienceApp } from "@/components/apps/ExperienceApp";
 import { ContactApp } from "@/components/apps/ContactApp";
 import { TerminalApp } from "@/components/apps/TerminalApp";
 import { SettingsApp } from "@/components/apps/SettingsApp";
@@ -31,6 +32,8 @@ function getAppContent(appId: AppId): React.ReactNode {
       return <CertificatesApp />;
     case "education":
       return <EducationApp />;
+    case "experience":
+      return <ExperienceApp />;
     case "contact":
       return <ContactApp />;
     case "terminal":

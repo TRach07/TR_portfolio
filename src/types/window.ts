@@ -33,6 +33,7 @@ export type AppId =
   | "skills"
   | "certificates"
   | "education"
+  | "experience"
   | "contact"
   | "terminal"
   | "settings";
